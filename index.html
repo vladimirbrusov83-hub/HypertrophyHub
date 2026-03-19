@@ -8,14 +8,14 @@
 <meta property="og:title" content="Strength Training Knowledge Base | Professional Coaching Resource">
 <meta property="og:description" content="20 years of coaching knowledge on hypertrophy, strength, and program design. Evidence-based. No filler.">
 <meta property="og:type" content="website">
-<link rel="canonical" href="https://yourdomain.com/">
+<link rel="canonical" href="https://hypertrophy.brusovcoach.org">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "Strength Training Knowledge Base",
   "description": "A professional strength and hypertrophy knowledge base built from 20 years of coaching experience.",
-  "url": "https://yourdomain.com"
+  "url": "https://hypertrophy.brusovcoach.org"
 }
 </script>
 <!-- TODO: Add og:image meta tag when hero image is added -->
@@ -800,10 +800,11 @@
     position: sticky; top: 0;
     background: var(--bg2);
     border-bottom: 1px solid var(--border);
-    padding: 14px 20px;
+    padding: 0 16px;
+    height: 56px;
     z-index: 200;
     align-items: center;
-    justify-content: space-between;
+    gap: 12px;
   }
   .mobile-logo {
     font-family: var(--font-display);
@@ -812,6 +813,7 @@
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
+    flex: 1;
   }
   .menu-toggle { background: none; border: none; color: #fff; font-size: 20px; cursor: pointer; }
 
@@ -951,7 +953,7 @@
 <!-- SIDEBAR -->
 <aside class="sidebar" aria-label="Site navigation">
   <div class="sidebar-back-bar">
-    <a href="https://brusovcoach.org" target="_blank" rel="noopener noreferrer">vladimirbrusov.com</a>
+    <a href="https://brusovcoach.org" target="_blank" rel="noopener noreferrer">brusovcoach.org</a>
   </div>
   <div class="sidebar-logo">
     <span class="sidebar-logo-eyebrow">Knowledge Base</span>
@@ -998,8 +1000,8 @@
 
 <!-- MOBILE HEADER -->
 <div class="mobile-header" role="banner">
-  <div class="mobile-logo">Hypertrophy Hub</div>
   <button class="menu-toggle" id="menuToggleBtn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+  <div class="mobile-logo">Hypertrophy Hub</div>
 </div>
 
 <!-- MOBILE MENU -->
@@ -1009,7 +1011,7 @@
     <button class="menu-toggle" id="menuCloseBtn" aria-label="Close navigation menu">✕</button>
   </div>
   <nav>
-    <a href="https://brusovcoach.org" target="_blank" rel="noopener noreferrer" style="color:var(--accent);font-size:12px;letter-spacing:1px;">← vladimirbrusov.com</a>
+    <a href="https://brusovcoach.org" target="_blank" rel="noopener noreferrer" style="color:var(--accent);font-size:12px;letter-spacing:1px;border-bottom:2px solid var(--border);">← Back to BrusovCoaching</a>
     <a href="#philosophy">💡 My Philosophy</a>
     <a href="#beginner">🟢 Beginner Guide</a>
     <a href="#principles">📐 Training Principles</a>
@@ -1034,6 +1036,7 @@
   <!-- HERO -->
   <div class="hero">
     <div class="hero-eyebrow">Professional Coaching Resource</div>
+    <div style="font-family:var(--font-display);font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:10px;">Coach Vladimir Brusov</div>
     <h1>Strength &amp; Hypertrophy Training — Principles That Work</h1>
     <p class="hero-desc">A knowledge base built from 20 years of coaching competitive bodybuilders, powerlifters, and high-performance athletes. Evidence-based, practically tested, and free of filler.</p>
     <div class="hero-badges">
@@ -2245,7 +2248,7 @@
         <h2>Professional Coaching Enquiries</h2>
         <p>Twenty years of experience coaching competitive bodybuilders, powerlifters, and Special Forces candidates. Online and in-person. St. Louis based, worldwide remote. Every athlete receives a structured, individualised program — not a template.</p>
       </div>
-      <a href="/cdn-cgi/l/email-protection#91f2fef0f2f9d1e8fee4e3f5fefcf0f8ffbff2fefc" class="cta-btn">Apply for Coaching →</a>
+      <a href="mailto:vladimirbrusov83@gmail.com" class="cta-btn">Apply for Coaching →</a>
     </div>
 
     <!-- ─────────────────────────────────────────── -->
@@ -2310,13 +2313,13 @@
     <div class="footer-links">
       <a href="https://brusovcoach.org" aria-label="Vladimir Brusov Coaching" target="_blank" rel="noopener noreferrer">Vladimir Brusov</a>
       <a href="https://health.brusovcoach.org" aria-label="Health & Longevity Hub" target="_blank" rel="noopener noreferrer">Health Hub</a>
-      <a href="/cdn-cgi/l/email-protection#1a79757b79725a63756f687e75777b737434797577" aria-label="Email">Email</a>
+      <a href="mailto:vladimirbrusov83@gmail.com" aria-label="Email">Email</a>
     </div>
     <div class="footer-copy">© <span id="footerYear"></span> All rights reserved.</div>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // ── AUTO COPYRIGHT YEAR
   document.getElementById('footerYear').textContent = new Date().getFullYear();
 
