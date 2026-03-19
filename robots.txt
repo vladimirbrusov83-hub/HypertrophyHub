@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hypertrophy.brusovcoach.org/sitemap.xml
