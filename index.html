@@ -8,7 +8,7 @@
 <meta property="og:title" content="Strength Training Knowledge Base | Professional Coaching Resource">
 <meta property="og:description" content="20 years of coaching knowledge on hypertrophy, strength, and program design. Evidence-based. No filler.">
 <meta property="og:type" content="website">
-<link rel="canonical" href="https://hypertrophy.brusovcoach.org/">
+<link rel="canonical" href="https://yourdomain.com/">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -818,13 +818,16 @@
   /* ── MOBILE MENU ── */
   .mobile-menu {
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0; left: 0; bottom: 0;
+    width: 75%;
+    max-width: 280px;
     background: var(--bg2);
     z-index: 300;
     overflow-y: auto;
     padding: 20px 0 40px;
     transform: translateX(-100%);
     transition: transform 0.25s ease;
+    box-shadow: 4px 0 24px rgba(0,0,0,0.4);
   }
   .mobile-menu.open { transform: translateX(0); }
   .mobile-menu-header {
@@ -952,7 +955,7 @@
   </div>
   <div class="sidebar-logo">
     <span class="sidebar-logo-eyebrow">Knowledge Base</span>
-    <h1>Strength Training Hub</h1>
+    <h1>Hypertrophy Hub</h1>
     <p>Professional coaching resource</p>
   </div>
   <nav aria-label="Main navigation">
@@ -995,17 +998,18 @@
 
 <!-- MOBILE HEADER -->
 <div class="mobile-header" role="banner">
-  <div class="mobile-logo">Strength Training Hub</div>
+  <div class="mobile-logo">Hypertrophy Hub</div>
   <button class="menu-toggle" id="menuToggleBtn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
 </div>
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
   <div class="mobile-menu-header">
-    <div class="mobile-logo">Strength Training Hub</div>
+    <div class="mobile-logo">Hypertrophy Hub</div>
     <button class="menu-toggle" id="menuCloseBtn" aria-label="Close navigation menu">✕</button>
   </div>
   <nav>
+    <a href="https://brusovcoach.org" target="_blank" rel="noopener noreferrer" style="color:var(--accent);font-size:12px;letter-spacing:1px;">← vladimirbrusov.com</a>
     <a href="#philosophy">💡 My Philosophy</a>
     <a href="#beginner">🟢 Beginner Guide</a>
     <a href="#principles">📐 Training Principles</a>
@@ -1094,7 +1098,7 @@
 
       <div class="start-here">
         <div class="start-here-label">⚡ The Whole System in One Rule</div>
-        <h3>Train 4–8 sets in the 6–12 rep range, once every 3–5 days. Progress the load over time. That covers 90% of what matters.</h3>
+        <h3>"Do 4–8 sets of 6–12 reps every 3–5 days. Add weight when you can. That's it."</h3>
         <p>Everything else on this page builds on this foundation. Master this before anything else.</p>
       </div>
 
@@ -1313,7 +1317,7 @@
       <div class="highlight">
         <h4>Correct approach during a caloric deficit:</h4>
         <ul>
-          <li><strong>Reduce volume</strong> — training volume and frequency can be substantially reduced (research supports reductions of up to two-thirds) without muscle loss, provided load on the bar is preserved</li>
+          <li><strong>Reduce volume</strong> — you can cut volume and frequency by up to 2/3 and still maintain muscle</li>
           <li><strong>Maintain intensity</strong> — keep the weight on the bar; tension is the signal that tells your body to keep the muscle</li>
           <li>Less volume + same weight = muscle maintained. The research is clear on this.</li>
         </ul>
@@ -1367,7 +1371,7 @@
       </div>
 
       <div class="callout">
-        Pharmacological enhancement removes many of the constraints that govern natural training. The effective rep range broadens in both directions, tolerable volume increases substantially, and the minimum load required to produce a meaningful anabolic signal drops significantly — making almost any loading strategy productive to some degree.
+        Drugs widen the parameters in every direction. Enhanced athletes can use lower or higher reps, fewer or more sets, and the lower threshold for load at which training becomes anabolic essentially disappears.
       </div>
 
       <div class="tier-divider"><span class="tier-badge tier-deeper">Deeper</span></div>
@@ -1397,7 +1401,7 @@
 
       <div class="tier-divider"><span class="tier-badge tier-foundation">Foundation</span></div>
       <div class="callout">
-        Adding weight every session is not progressive overload — that's a common misreading. True progressive overload means <strong>raising the training stimulus only when the body has actually adapted to the current one</strong>. Until adaptation has occurred, the current stimulus is still overload. Without ever progressing, training stalls at maintenance.
+        Progressive overload is NOT adding weight every session. It is the <strong>systematic increase of training stimulus over time</strong> as the body adapts. Without progression, training becomes maintenance at best.
       </div>
 
       <h3>The Three Progression Methods</h3>
@@ -1520,7 +1524,7 @@
       </div>
 
       <div class="callout">
-        If you're doing sets of 20 and stopping at 15, you are not training. <strong>Most of the growth signal is generated in the final few reps of a set — roughly the last 3–5 — when the fibers are fully recruited and under maximal tension.</strong>
+        If you're doing sets of 20 and stopping at 15, you are not training. <strong>The effective reps — the ones that actually cause hypertrophy — are the last 3–5 reps of any set.</strong>
       </div>
 
       <div class="tier-divider"><span class="tier-badge tier-deeper">Deeper</span></div>
@@ -1592,12 +1596,12 @@
 
       <div class="tier-divider"><span class="tier-badge tier-foundation">Foundation</span></div>
       <div class="callout">
-        Hypertrophy is local. <strong>The target muscle needs to be the first thing that reaches its limit.</strong> If your low back fails on deadlifts before your hamstrings, the deadlift is not training your hamstrings — it's training your low back.
+        Hypertrophy is local. <strong>The muscle has to be the limiting factor.</strong> If your low back fails on deadlifts before your hamstrings, the deadlift is not training your hamstrings — it's training your low back.
       </div>
 
       <h3>The Core Rule: Target Muscle = Limiting Factor</h3>
       <div class="highlight">
-        <p>For any exercise to produce hypertrophy in a target muscle, <strong>that muscle must reach its limit before anything else does</strong>. If something else gives out first (low back, triceps, grip), you're training that structure — not your target muscle. Choose exercises where the muscle you're trying to develop is the weakest link in the chain.</p>
+        <p>For any exercise to grow a muscle, <strong>that muscle must be the first thing that fatigues</strong>. If something else gives out first (low back, triceps, grip), you're training that thing — not your target muscle. Choose exercises where your weak link is the muscle you want to grow.</p>
       </div>
 
       <div class="tier-divider"><span class="tier-badge tier-deeper">Deeper</span></div>
@@ -1686,6 +1690,18 @@
       </div>
 
       <div class="tier-divider"><span class="tier-badge tier-advanced">Advanced</span></div>
+      <h3>Peak Week / Contest Prep</h3>
+      <div class="card" style="margin-top:16px;">
+        <div class="card-title">Pre-Show Training Guidelines</div>
+        <ul>
+          <li>Train at 70% of normal working weight</li>
+          <li>Goal: pump and fill the muscle — not strength or progressive overload</li>
+          <li>Reduce resistance training volume significantly</li>
+          <li>No new exercises; no ego lifting; no heroics</li>
+          <li>Final heavy workout: 3–4 days before show</li>
+          <li>Light massage acceptable; deep tissue counterproductive pre-show</li>
+        </ul>
+      </div>
     </section>
 
     <!-- ─────────────────────────────────────────── -->
@@ -1790,14 +1806,14 @@
       <div class="cards">
         <div class="card">
           <div class="card-title">The Overtraining Problem</div>
-          <p>A recurring pattern in competitive bodybuilding is athletes finishing shows in a deteriorated state — the result of running high training volume and aggressive caloric restriction at the same time throughout prep. The smarter approach is the reverse: build volume earlier, then pare it back as the diet deepens, keep the load on the bar as the primary stimulus signal, and substitute removed resistance work with low-intensity walking, which burns calories without triggering muscle breakdown.</p>
+          <p>Physique competitors commonly come out of shows broken from systematic overtraining — high volume + low calories simultaneously. The correct approach: reduce volume as prep deepens; maintain intensity; replace resistance volume with low-intensity walking.</p>
         </div>
       </div>
 
       <h3>Injury Prevention Rules</h3>
       <div class="mistakes">
         <div class="mistake"><div class="mistake-num">✓</div><div><strong>Warm up properly</strong>3–5 pyramid warm-up sets. Warm up joints specifically (elbows before arm work). Never go from zero to working weight.</div></div>
-        <div class="mistake"><div class="mistake-num">✓</div><div><strong>Ensure the target muscle reaches fatigue before anything else does</strong>If a different structure hurts or fatigues first, you're stressing the wrong thing and heading toward injury.</div></div>
+        <div class="mistake"><div class="mistake-num">✓</div><div><strong>The target muscle must be the limiting factor</strong>If something else hurts or fatigues first, you're injury-loading the wrong structure.</div></div>
         <div class="mistake"><div class="mistake-num">✓</div><div><strong>Leg extension: stop short of full lockout</strong>Patellar tendon stress increases exponentially near full extension. The last few degrees are high risk, low reward.</div></div>
         <div class="mistake"><div class="mistake-num">✓</div><div><strong>Heavy bench press: respect the load</strong>Pec tears are a major risk at heavy loads. Pre-exhaust with flies to reduce pressing load while maintaining stimulus.</div></div>
         <div class="mistake"><div class="mistake-num">✓</div><div><strong>Don't add weight too fast</strong>Connective tissue adapts much more slowly than muscle. Jumping weight too aggressively causes tendon/ligament failure while the muscle feels fine.</div></div>
@@ -1805,7 +1821,7 @@
       </div>
 
       <div class="callout">
-        Programming that varies constantly without systematic progression, and that incorporates high-skill movements like Olympic lifts under conditions of accumulated fatigue, creates an outsized injury environment. <strong>Systematic adaptation and controlled load progression are not arbitrary constraints — they are what separate training from random physical stress.</strong>
+        CrossFit's random programming combined with technical Olympic lifts performed under fatigue produces disproportionately high injury rates. <strong>Specificity and controlled progression exist for a reason.</strong>
       </div>
     </section>
 
@@ -1827,7 +1843,7 @@
 
       <div class="tier-divider"><span class="tier-badge tier-foundation">Foundation</span></div>
       <div class="callout">
-        Fat loss has one non-negotiable condition at the physiological level: energy intake must fall below energy expenditure over time. <strong>Every diet that produces results achieves this in one way or another. The specific approach is secondary — the deficit is primary. Establish your baseline through tracking before making any adjustments.</strong>
+        The only biological requirement for fat loss is a sustained caloric deficit. <strong>All diets that work do so by getting you to eat less. The method doesn't matter — the deficit does. Master tracking first, then manipulate.</strong>
       </div>
 
       <!-- KEY NUMBERS -->
@@ -1917,7 +1933,7 @@
       <div class="cards">
         <div class="card">
           <div class="card-title">Calculate Your Deficit</div>
-          <p><strong>Formula:</strong> body weight (lbs) × target % loss × 500 = daily calorie deficit.<br><br>Illustration: a 150 lb person targeting 0.5%/week loss needs to create approximately <strong>375 cal/day below maintenance</strong>.<br><br>Lighter individuals (&lt;150 lbs): typically ~300 cal/day. Heavier individuals (&gt;250 lbs): up to ~700 cal/day.</p>
+          <p><strong>Formula:</strong> body weight (lbs) × target % loss × 500 = daily calorie deficit.<br><br>Example: 150 lbs × 0.005 (0.5%) × 500 = <strong>375 cal/day deficit</strong>.<br><br>Under 150 lbs: remove ~300 cal/day. Over 250 lbs: up to 700 cal/day.</p>
         </div>
         <div class="card">
           <div class="card-title">When Progress Stalls</div>
@@ -1955,7 +1971,7 @@
       <!-- MAINTENANCE PHASE -->
       <h3>The Maintenance Phase — Why It's Mandatory</h3>
       <div class="callout">
-        After fat loss, the body drives hunger up, craves calorie-dense foods, and reduces spontaneous activity. <strong>Fat regain is primarily a failure of the post-diet period — the body's biological push to return to its prior state is powerful, and skipping a structured maintenance phase leaves that drive unopposed.</strong> Maintenance phase duration should roughly equal the preceding diet.
+        After fat loss, the body drives hunger up, craves calorie-dense foods, and reduces spontaneous activity. <strong>Most people who succeed at fat loss regain because they skip maintenance.</strong> Maintenance phase duration should roughly equal the preceding diet.
       </div>
       <div class="steps">
         <div class="step">
@@ -2136,6 +2152,21 @@
         </div>
       </div>
 
+      <h3>HIT (High Intensity Training) — History &amp; Reality</h3>
+      <div class="highlight">
+        <h4>The HIT lineage</h4>
+        <ul>
+          <li><strong>Arthur Jones (1970s):</strong> Nautilus machines + ~9 true limit sets/week. Rational and reasonable.</li>
+          <li><strong>Mike Mentzer:</strong> Extended Jones to extremes — eventually recommending one maximal effort every two weeks. Effective only if actually executed to true failure (rare).</li>
+          <li><strong>Dorian Yates:</strong> One top set to failure + multiple warm-up sets. Not one total set. Elite intensity, significant injuries.</li>
+        </ul>
+        <p style="margin-top:10px;"><strong>The critical rule:</strong> HIT and high volume are mutually exclusive. Pick one system and follow it completely:</p>
+        <ul>
+          <li><strong>HIT:</strong> 2–3 working sets/muscle, absolute failure, 5+ days between sessions</li>
+          <li><strong>Volume:</strong> 15–20 sets/muscle, stop 2–3 reps short of failure, frequent sessions</li>
+        </ul>
+      </div>
+
       <h3>Myofibrillar vs. Sarcoplasmic Hypertrophy</h3>
       <div class="cards">
         <div class="card">
@@ -2273,13 +2304,12 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <h3>Strength Training Hub</h3>
+      <h3>Hypertrophy Hub</h3>
       <p>Professional Coaching Knowledge Base — Online coaching worldwide | St. Louis, MO</p>
     </div>
     <div class="footer-links">
       <a href="https://brusovcoach.org" aria-label="Vladimir Brusov Coaching" target="_blank" rel="noopener noreferrer">Vladimir Brusov</a>
       <a href="https://health.brusovcoach.org" aria-label="Health & Longevity Hub" target="_blank" rel="noopener noreferrer">Health Hub</a>
-      <a href="https://www.instagram.com/vladimirbrusov/" aria-label="Instagram">Instagram</a>
       <a href="/cdn-cgi/l/email-protection#1a79757b79725a63756f687e75777b737434797577" aria-label="Email">Email</a>
     </div>
     <div class="footer-copy">© <span id="footerYear"></span> All rights reserved.</div>
@@ -2345,8 +2375,21 @@
   // Close mobile menu on nav link click
   document.querySelectorAll('.mobile-menu nav a').forEach(link => {
     link.addEventListener('click', function() {
-      toggleMenu();
+         document.getElementById('mobileMenu').classList.remove('open');
+      document.getElementById('menuToggleBtn').setAttribute('aria-expanded', 'false');
     });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    const menu = document.getElementById('mobileMenu');
+    const toggleBtn = document.getElementById('menuToggleBtn');
+    if (menu.classList.contains('open') &&
+        !menu.contains(e.target) &&
+        !toggleBtn.contains(e.target)) {
+      menu.classList.remove('open');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+    }
   });
 
 </script>
