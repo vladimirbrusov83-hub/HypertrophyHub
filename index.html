@@ -833,10 +833,20 @@
   .mobile-menu.open { transform: translateX(0); }
   .mobile-menu-header {
     display: flex; align-items: center; justify-content: space-between;
-    padding: 0 20px 20px;
+    padding: 16px 20px;
     border-bottom: 1px solid var(--border);
-    margin-bottom: 8px;
   }
+  .menu-back-link {
+    display: block;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.12s, background 0.12s;
+  }
+  .menu-back-link:hover { color: var(--accent-bright); background: var(--bg3); }
   .mobile-menu nav a {
     display: block;
     padding: 12px 24px;
@@ -1016,11 +1026,10 @@
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
   <div class="mobile-menu-header">
-    <a href="https://brusovcoach.org" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
-      <div style="font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--muted);transition:color 0.12s;">Coach Vladimir Brusov</div>
-    </a>
+    <div class="mobile-logo">Hypertrophy Training Hub</div>
     <button class="menu-toggle" id="menuCloseBtn" aria-label="Close navigation menu">✕</button>
   </div>
+  <a href="https://brusovcoach.org" class="menu-back-link" target="_blank" rel="noopener noreferrer">← Back to BrusovCoaching</a>
   <nav>
     <a href="#philosophy">💡 My Philosophy</a>
     <a href="#beginner">🟢 Beginner Guide</a>
