@@ -901,7 +901,7 @@
     .mobile-header { display: flex; }
     .hero { padding: 40px 24px 36px; }
     .hero h1 { font-size: 36px; }
-    .filter-bar { padding: 10px 16px; overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
+    .filter-bar { padding: 10px 16px; overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; pointer-events: none; }
     .search-wrap { display: none; }
     .content { padding: 0 24px 60px; }
     .cards { grid-template-columns: 1fr; }
@@ -911,6 +911,16 @@
     .cta-block { flex-direction: column; padding: 36px 28px; gap: 24px; }
     .cta-block-text h2 { font-size: 26px; }
   }
+
+  /* ── MENU BACKDROP ── */
+  .menu-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 299;
+  }
+  .menu-backdrop.open { display: block; }
 
   /* ── SCROLLBAR ── */
   .sidebar::-webkit-scrollbar { width: 4px; }
@@ -1027,6 +1037,8 @@
     <a href="#numbers">🔢 Key Numbers</a>
   </nav>
 </div>
+
+<div class="menu-backdrop" id="menuBackdrop"></div>
 
 <!-- MAIN -->
 <main class="main">
@@ -2271,16 +2283,31 @@
   });
 
   // ── MOBILE MENU
-  function toggleMenu() {
-    const menu = document.getElementById('mobileMenu');
-    const isOpen = menu.classList.toggle('open');
-    document.getElementById('menuToggleBtn').setAttribute('aria-expanded', isOpen);
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuBackdrop = document.getElementById('menuBackdrop');
+  const menuToggleBtn = document.getElementById('menuToggleBtn');
+
+  function openMenu() {
+    mobileMenu.classList.add('open');
+    menuBackdrop.classList.add('open');
+    menuToggleBtn.setAttribute('aria-expanded', 'true');
+  }
+  function closeMenu() {
+    mobileMenu.classList.remove('open');
+    menuBackdrop.classList.remove('open');
+    menuToggleBtn.setAttribute('aria-expanded', 'false');
   }
 
-  document.getElementById('menuToggleBtn').addEventListener('click', toggleMenu);
-  document.getElementById('menuCloseBtn').addEventListener('click', toggleMenu);
+  menuToggleBtn.addEventListener('click', openMenu);
+  document.getElementById('menuCloseBtn').addEventListener('click', closeMenu);
+  menuBackdrop.addEventListener('click', closeMenu);
 
   // Close mobile menu on nav link click
   document.querySelectorAll('.mobile-menu nav a').forEach(link => {
     link.addEventListener('click', function() {
-   
+         closeMenu();
+    });
+  });
+</script>
+</body>
+</html>
